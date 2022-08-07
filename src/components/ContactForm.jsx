@@ -1,6 +1,13 @@
 import React from 'react'
 
 function ContactForm() {
+    function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+
+        window.location.href = 'mailto:tanmayabiswal.kn8@gmail.com'+'&subject='+'Form Post'+'&body='+data.get('email-body');
+    }
+
     return (
         <section className='contact-me' id='contact-me'>
             <div className="decor">
@@ -9,7 +16,7 @@ function ContactForm() {
             <div className="container">
                 <div className="frame">
                     <h5>Get in touch</h5>
-                    <form action='mailto:tanmayabiswal.kn8@gmail.com' method='post' encType="text/plain">
+                    <form onSubmit={handleSubmit} encType="text/plain">
                         <label className='hide-element' htmlFor="email">Email</label>
                         <input type="email" name="email" id="email" placeholder='Email' />
                         
