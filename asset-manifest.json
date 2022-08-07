@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tanmaya-portfolio/static/css/main.f5e97afc.css",
-    "main.js": "/tanmaya-portfolio/static/js/main.cc7974e1.js",
+    "main.js": "/tanmaya-portfolio/static/js/main.ec38e71b.js",
     "static/js/787.1ed0c42c.chunk.js": "/tanmaya-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/open-sans-all-500-normal.woff": "/tanmaya-portfolio/static/media/open-sans-all-500-normal.05ba398b4c236278ccf0.woff",
     "static/media/open-sans-all-400-normal.woff": "/tanmaya-portfolio/static/media/open-sans-all-400-normal.3bc4108fa8f9a72e6ea5.woff",
@@ -86,11 +86,11 @@
     "static/media/Vector_3.svg": "/tanmaya-portfolio/static/media/Vector_3.7d61505b00433c779e6e.svg",
     "static/media/eva_arrow-ios-downward-fill.svg": "/tanmaya-portfolio/static/media/eva_arrow-ios-downward-fill.f9d9e6c8051bdef3cb4eaaeacbcfb5a7.svg",
     "main.f5e97afc.css.map": "/tanmaya-portfolio/static/css/main.f5e97afc.css.map",
-    "main.cc7974e1.js.map": "/tanmaya-portfolio/static/js/main.cc7974e1.js.map",
+    "main.ec38e71b.js.map": "/tanmaya-portfolio/static/js/main.ec38e71b.js.map",
     "787.1ed0c42c.chunk.js.map": "/tanmaya-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5e97afc.css",
-    "static/js/main.cc7974e1.js"
+    "static/js/main.ec38e71b.js"
   ]
 }
