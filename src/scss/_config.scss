@@ -1,0 +1,78 @@
+$primaryBgColor: #000F1B;
+$secondaryBgColor: #0075A2;
+$contrastColor: #F0EFF4;
+$accent1: #FF0035;
+$accent2: #FF69EB;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
+    // animation-play-state: paused !important;
+}
+
+a {
+    font-style: none;
+    color: $contrastColor;
+}
+
+body {
+    background-color: $primaryBgColor;
+    font-family: 'Open Sans', sans-serif;
+    color: $contrastColor;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+h4 {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+strong{
+    font-size: inherit;
+    font-weight: 500;
+}

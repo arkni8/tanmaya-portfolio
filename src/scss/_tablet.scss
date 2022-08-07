@@ -1,0 +1,100 @@
+@mixin centering {
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 950px) {
+    
+    .landing {
+        .container {
+            @include flex-container;
+        }
+        .intro {
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+            > * {
+                padding-left: 50px;
+            }
+
+            .left-side {
+                align-self: flex-end;
+                flex-basis: 100%;
+            }
+            .right-side {
+                align-self: flex-start;
+                justify-self: flex-start;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .key-skills {
+        margin-bottom: 0;
+        height: max(100vh, 1000px);
+
+        .container {
+            @include flex-container;
+            height: unset;
+            padding: 60px 0;
+
+
+            .frame {
+                padding-inline: 50px;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .library-toolset-section {
+        height: max-content;
+        padding-block: 30px;
+    }
+
+    .about-me {
+        .decor {
+            background-position: right center;
+        }
+    }
+
+    .projects {
+        .container {
+            .frame {
+                .project-card {
+                    grid-template-columns: 1fr;
+                    row-gap: 20px;
+                    border-top: 1px solid $secondaryBgColor;
+                    border-bottom: 1px solid $secondaryBgColor;
+
+                    .right-side {
+                        .title p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-me {
+        .decor {
+            background-position: left center;
+        }
+        .container {
+            @include flex-container;
+            .frame {
+                padding-inline: 50px;
+            }
+        }
+    }
+
+
+
+}

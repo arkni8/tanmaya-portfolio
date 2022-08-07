@@ -1,0 +1,31 @@
+%btn {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 14px 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: $contrastColor;
+    font-weight: 600;
+    transition: 0.05s ease-out;
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.primary-btn {
+    @extend %btn;
+    background-color: $accent1;
+
+    &:hover {
+        background-color: darken($accent1, 15%);
+    }
+}
+
+.secondary-btn {
+    @extend %btn;
+    background-color: $secondaryBgColor;
+
+    &:hover {
+        background-color: darken($secondaryBgColor, 15%);
+    }
+}

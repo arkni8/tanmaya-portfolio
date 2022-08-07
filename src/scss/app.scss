@@ -1,0 +1,423 @@
+@import 'config';
+@import 'buttons';
+@import 'animation';
+
+// This is all for Landing section of the porfolio ---
+
+.container {
+    color: $contrastColor;
+    margin-inline: auto;
+    margin-block: 0;
+    max-width: 1300px;
+}
+
+.landing {
+    position: relative;
+    overflow-y: hidden;
+
+    .background-image {
+        background-image: url('../asset/background/Vector_1.svg');
+        background-size: cover;
+        background-position: left bottom;
+        position: absolute; 
+        inset: 0;
+        z-index: -1;
+    }
+
+    .intro {
+        display: flex;
+        font-family: "Montagu Slab", serif;
+        min-height: 86vh;
+        align-items: center;
+    }
+
+    .left-side {
+        flex: 1.5;
+        padding-left: 15px;
+
+        &>* {
+            padding-block: 0.4rem;
+        }
+
+        .links-to-acc {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: opacity 0.8s ease-in-out;
+            // background-color: $primaryBgColor;
+            // border-radius: 0 0 10px 10px;
+
+            &>* {
+                margin-block: 10px;
+                padding-inline: 10px;
+            }
+        }
+    }
+
+    .right-side {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 60px;
+        padding-right: 15px;
+
+    }
+
+    // Scroll-down Bouncing Animation
+    .scroll-indicator {
+        height: 60px;
+        animation: bouncing-triangle 1.5s infinite alternate ease-in-out 0s;
+
+        > :first-child {
+            text-align: center;
+            color: $secondaryBgColor;
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 500;
+            // animation: bouncing-triangle 1.5s infinite alternate ease-in-out 0s;
+        }
+
+        > :nth-child(2) {
+            text-align: center;
+            height: 20px;
+            margin-bottom: -8px;
+
+            // animation: bouncing-triangle 1.5s infinite alternate ease-in-out 0s;
+        }
+
+        > :last-child {
+            text-align: center;
+            height: 20px;
+
+            // animation: bouncing-triangle 1.5s infinite alternate ease-in-out 0s;
+        }
+
+
+    }
+
+}
+
+//  This section is for Navigation bar of the portfolio ---
+.nav {
+    margin-inline: auto;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    // background-image: linear-gradient(to left, $accent1, $secondaryBgColor);
+    background-image: linear-gradient(to right, $primaryBgColor 8%, $secondaryBgColor 30%, $secondaryBgColor 50%, $secondaryBgColor 70%, $primaryBgColor 92%);
+
+    >nav {
+        height: 100%;
+    }
+
+    >nav>ul {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+
+        li {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            transition: 0.3s linear;
+            height: 100%;
+        }
+        //test
+        .nav-accent-animation {
+            border-bottom: solid $accent2 8px;
+            padding-top: 6px;
+        }
+    }
+}
+
+
+// This section is for controlling the CSS of key-skills
+.key-skills {
+    width: 100%;
+    height: 86vh;
+    margin-bottom: -30px;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .frame {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 45px 25px;
+            justify-content: space-between;
+            width: 1250px;
+
+            > :first-child {
+                flex: 1 0 100%;
+                font-weight: 600;
+                padding-bottom: 1.4rem;
+            }
+
+            .skill-card {
+                width: 270px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                >* {
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
+
+// This section is for CSS of 'Library and toolset'
+.library-toolset-section {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 70px;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .frame {
+            padding: 45px 60px;
+            width: 1250px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 40px;
+            column-gap: 30px;
+
+            border-radius: 50px;
+            background-image: url(../asset/background/Bubbles.svg);
+            background-size: 60px 60px;
+            // background-repeat: repeat;
+
+            > :first-child {
+                flex: 1 0 100%;
+                font-weight: 600;
+            }
+
+            .skill-badge {
+                visibility: hidden;
+                width: 120px;
+                display: grid;
+                grid-template-rows: 70px 50px;
+                row-gap: 1px;
+                place-items: center;
+
+                >* {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+
+                .icon {
+                    width: 60px;
+                    aspect-ratio: 1;
+                }
+            }
+        }
+    }
+}
+
+// This section is CSS of About-Me
+.about-me {
+    width: 100%;
+    padding-block: 10px;
+    margin-bottom: 80px;
+    background-color: $secondaryBgColor;
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .frame {
+            padding: 70px;
+
+            > :first-child {
+                margin-bottom: 20px;
+            }
+
+            >p {
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .decor {
+        height: 70px;
+        transform: translateY(20px);
+        background-image: url(../asset/background/Vector_2.svg);
+        background-position: center;
+    }
+}
+
+// This section styles the 'Portfolio Projects'
+.projects {
+    width: 100%;
+    padding-block: 10px;
+    margin-bottom: 50px;
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .frame {
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+
+            > :first-child {
+                margin-bottom: 20px;
+            }
+
+            .project-card {
+                padding: 40px;
+                display: grid;
+                grid-template-columns: 3.3fr 5fr;
+                column-gap: 40px;
+
+                .left-side {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+
+                    > :first-child {
+                        width: 400px;
+                        aspect-ratio: 16/9;
+                        border-radius: 5px;
+                    }
+
+                    > :last-child {
+                        display: flex;
+                        gap: 30px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
+                .right-side {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    > * {
+                        width: 100%;
+                    }
+
+                    .descr p {
+                        line-height: 1.5;
+                    }
+
+                    .tags {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        flex-wrap: wrap;
+
+                        p {
+                            font-size: 1rem;
+                            padding-inline: 10px;
+                            padding-block: 5px;
+                            border-radius: 20px;
+                            background-color: $accent2;
+                            color: $primaryBgColor;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// This section is for the CSS of Contact-Me
+.contact-me {
+    width: 100%;
+    padding-block: 10px;
+    margin-bottom: 20px;
+    background-color: $secondaryBgColor;
+    visibility: hidden;
+
+    .decor {
+        height: 70px;
+        transform: translateY(-20px);
+        background-image: url(../asset/background/Vector_3.svg);
+        background-position: center;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .frame {
+            padding-block: 80px;
+            padding-inline: 260px;
+
+            > :first-child {
+                margin-bottom: 20px;
+            }
+
+            textarea, input:not(:last-child) {
+                box-sizing: border-box;
+                background-color: $primaryBgColor;
+                width: 100%;
+                margin-bottom: 5px;
+                border-radius: 5px;
+                padding-inline: 12px;
+                color: $contrastColor;
+
+                &::placeholder {
+                    color: $contrastColor;
+                    opacity: 0.5;
+                }
+            }
+
+            input:not(:last-child) {
+                height: 40px;
+            }
+
+            textarea {
+                font-family: 'Open Sans', sans-serif;
+                line-height: 2.0;
+                padding-block: 3px;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: $contrastColor;
+    margin-bottom: 90px;
+}
+
+.animation-pause > * {
+    animation-play-state: paused;
+}
+
+
+@import 'tablet';
+@import 'mobile';
