@@ -5,7 +5,7 @@ function ContactForm() {
         event.preventDefault();
         const data = new FormData(event.target);
 
-        window.location.href = 'mailto:tanmayabiswal.kn8@gmail.com'+'&subject='+'Form Post'+'&body='+data.get('email-body');
+        window.location.href = `mailto:tanmayabiswal.kn8@gmail.com?subject=Hello from ${data.get('name')}&body=${data.get('email-body')}`;
     }
 
     return (
