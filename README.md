@@ -8,7 +8,7 @@ I hope you like visiting my page, I welcome you to share any thoughts you have o
 
  (*But I think the page turned out prettttttyyyy good if I say so myself haha.*) 
 
-![A screenshot of the page's landing section](./ScreenshotPortfolioTanmayaB.png)
+![A screenshot of the page's landing section](./ScreenshotPortfolioTanmayaB.png "The magnificient view of the page's landing section for you to behold")
 
 #
 
