@@ -1,5 +1,5 @@
 {
-  "short_name": "Portfolio",
+  "short_name": "Tanmaya's Portfolio",
   "name": "Portfolio of Tanmaya Biswal",
   "icons": [
     {
@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "browser",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#000f1b"
 }
