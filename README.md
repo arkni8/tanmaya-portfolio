@@ -12,7 +12,7 @@ I hope you like visiting my page, I welcome you to share any thoughts you have o
 
 #
 
-### *`Do not know why would want to build my protfolio on your machine, but here goes -->`*
+### *`Do not know why would want to build my portfolio on your machine, but here goes -->`*
 
 ### `npm install`
 
