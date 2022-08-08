@@ -22,7 +22,7 @@ function LibraryToolset() {
         <section className='library-toolset-section'>
             <div className="container">
                 <div className="frame">
-                    <h4>Other Libraries and Toolset</h4>
+                    <h5>Other Libraries and Toolset</h5>
                     <SkillBadge><HTMLSVG /><p>HTML</p></SkillBadge>
                     <SkillBadge><CSSSVG /><p>CSS</p></SkillBadge>
                     <SkillBadge><JsSVG /><p>Javascript</p></SkillBadge>

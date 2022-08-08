@@ -23,12 +23,12 @@ function Landing() {
                         </div>
                         <div style={{ padding: '0' }} className="empty-div"></div>
                         <div className="links-to-acc">
-                            <a href="https://github.com/arkni8" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/arkni8" title='Link to Github profile' target="_blank" rel="noopener noreferrer">
                                 <div className="svg-intro">
                                     <GithubSVG />
                                 </div>
                             </a>
-                            <a href="https://www.linkedin.com/in/tanmaya-biswal-36a767160/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/tanmaya-biswal-36a767160/" title='Link to Linkedin profile' target="_blank" rel="noopener noreferrer">
                                 <div className="svg-intro">
                                     <LinkedinSVG />
                                 </div>
@@ -40,7 +40,7 @@ function Landing() {
                         <button className="primary-btn" onClick={() => window.open('https://docs.google.com/document/d/1z_Ry3MA-FzuTt6IR6pmzXlcQfPb6oZKTJkBCHgJd1LI/edit?usp=sharing', '_blank')}>
                             View Resume
                         </button>
-                        <div className="primary-btn"><a href="#projects">View Projects</a></div>
+                        <a href="#projects"><div className="primary-btn">View Projects</div></a>
                     </div>
                 </div>
             </div>

@@ -4,26 +4,26 @@ import Navigation from './components/Navigation';
 import KeySkills from './components/KeySkills';
 import LibraryToolset from './components/LibraryToolset';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import ContactForm from './components/ContactForm';
+import Copyright from './components/Copyright';
 
 // Font imports
-import '@fontsource/montagu-slab';
-import '@fontsource/open-sans';
+import '@fontsource/montagu-slab/500.css';
+import '@fontsource/montagu-slab/400.css';
+import '@fontsource/montagu-slab/300.css';
+import '@fontsource/montagu-slab/200.css';
 import '@fontsource/open-sans/300.css';
 import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/500.css';
 import '@fontsource/open-sans/600.css';
-import '@fontsource/open-sans/700.css';
-import '@fontsource/open-sans/800.css';
-import Projects from './components/Projects';
-import ContactForm from './components/ContactForm';
-import Copyright from './components/Copyright';
-// import '@fontsource/open-sans/900.css';
+
 
 
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Landing />
       <KeySkills />
       <LibraryToolset />
