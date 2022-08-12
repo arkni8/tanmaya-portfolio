@@ -1,4 +1,4 @@
-let aboutMeNavElement, keySkillNavElement, projectsNavElement, contactNavElement, scrollDownIndicatorElement;
+let aboutMeNavElement, keySkillNavElement, projectsNavElement, landingElement, contactNavElement;
 var sweepAnimation;
 
 window.addEventListener("load", () => {

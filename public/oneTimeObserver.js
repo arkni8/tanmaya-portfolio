@@ -18,7 +18,7 @@ function sweepInAnimation(direction, element) {
     }
     if (!value) { value = [] }
 
-    let sweepInAni_ = element.animate({
+    element.animate({
         opacity: [0, 1],
         transform: value,
         easing: 'ease-out',

@@ -5,7 +5,6 @@ import { ReactComponent as Triangle } from '../asset/small_icon/eva_arrow-ios-do
 
 
 function Landing() {
-
     return (
         <section className="landing">
             <div className="background-image">
@@ -19,7 +18,7 @@ function Landing() {
                             <h1>I'm Tanmaya Biswal</h1>
                         </div>
                         <div className="subtext" style={{ position: 'relative' }}>
-                            <h2>Full stack web developer</h2>
+                            <h2>Full stack developer</h2>
                         </div>
                         <div style={{ padding: '0' }} className="empty-div"></div>
                         <div className="links-to-acc">
