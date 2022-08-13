@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://t.biswal.xyz/tanmaya-portfolio",
+  "homepage": "https://t.biswal.xyz/",
   "private": true,
   "dependencies": {
     "@fontsource/montagu-slab": "^4.5.8",
