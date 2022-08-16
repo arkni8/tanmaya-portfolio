@@ -1,9 +1,4 @@
 import SkillCard from "./SkillCard";
-// import { ReactComponent as ReactSVG } from '../asset/big_icon/vscode-icons_file-type-reactjs.svg';
-// import { ReactComponent as NodeExpressSVG } from '../asset/big_icon/Frame_9-cropped.svg';
-// import {ReactComponent as MongoSVG} from '../asset/big_icon/logos_mongodb-icon.svg';
-
-
 
 function KeySkills() {
 
