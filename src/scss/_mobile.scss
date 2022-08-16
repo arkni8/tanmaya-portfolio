@@ -88,7 +88,8 @@
     }
 
     .key-skills {
-        height: 1200px;
+        min-height: 1200px;
+        height: fit-content;
 
         .container .frame .skill-card {
             height: 340px;
